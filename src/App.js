@@ -101,6 +101,7 @@ const App = () => {
         </div>
       </div>
 </div>
+
 {/* New Small Grey Div */}
 <div style={{ position: "relative", width: "250px", height: "380px", backgroundColor: "#f0f0f0", borderRadius: "10px", padding: "10px", display: "flex", justifyContent: "center", alignItems: "flex-start", margin: "-400px 1330px" }}>
 
@@ -144,58 +145,48 @@ const App = () => {
 
       </div>
     </div>
-
-
-
-
-
-
-
-
-
     <div className="new-navbar mx-auto fw-bold">
-      <ul className="new-navbar-items">
-        <li className="new-navbar-item">
-          <FaHome className="new-navbar-icon" />
-          Home
-        </li>
-        <li className="new-navbar-item">
-          <FaInfoCircle className="new-navbar-icon" />
-          About
-        </li>
-        <li className="new-navbar-item">
-          <FaInfoCircle className="new-navbar-icon" />
-          About
-        </li>
-        <li className="new-navbar-item">
-          <FaInfoCircle className="new-navbar-icon" />
-          About
-        </li>
-        <li className="new-navbar-item">
-          <FaInfoCircle className="new-navbar-icon" />
-          About
-        </li>
-        <li className="new-navbar-item">
-          <FaInfoCircle className="new-navbar-icon" />
-          About
-        </li>
-        <li className="new-navbar-item">
-          <FaEnvelope className="new-navbar-icon" />
-          Contact
-        </li>
-        <li className="new-navbar-item dropdown">
-          <FaCog className="new-navbar-icon" />
-          Settings
-          <div className="dropdown-menu">
-            <div className="dropdown-item">Option 1</div>
-            <div className="dropdown-item">Option 2</div>
-            <div className="dropdown-item">Option 3</div>
-          </div>
-          <FaCaretDown className="new-navbar-icon" />
-        </li>
-      </ul>
-    </div>
-
+  <ul className="new-navbar-items">
+    <li className="new-navbar-item">
+      <FaHome className="new-navbar-icon" />
+      Home
+    </li>
+    <li className="new-navbar-item">
+      <FaInfoCircle className="new-navbar-icon" />
+      About
+    </li>
+    <li className="new-navbar-item">
+      <FaInfoCircle className="new-navbar-icon" />
+      Services
+    </li>
+    <li className="new-navbar-item">
+      <FaInfoCircle className="new-navbar-icon" />
+      Portfolio
+    </li>
+    <li className="new-navbar-item">
+      <FaInfoCircle className="new-navbar-icon" />
+      Blog
+    </li>
+    <li className="new-navbar-item">
+      <FaInfoCircle className="new-navbar-icon" />
+      Careers
+    </li>
+    <li className="new-navbar-item">
+      <FaEnvelope className="new-navbar-icon" />
+      Contact
+    </li>
+    <li className="new-navbar-item dropdown">
+      <FaCog className="new-navbar-icon" />
+      Settings
+      <div className="dropdown-menu">
+        <div className="dropdown-item">Option 1</div>
+        <div className="dropdown-item">Option 2</div>
+        <div className="dropdown-item">Option 3</div>
+      </div>
+      <FaCaretDown className="new-navbar-icon" />
+    </li>
+  </ul>
+</div>
 
 
     <div className="layout-container">
@@ -216,6 +207,7 @@ const App = () => {
           <li className="sidebar-item"><FaShoppingCart className="sidebar-icon" /> Orders</li>
           <li className="sidebar-item"><FaBriefcase className="sidebar-icon" /> Business</li>
         </ul>
+        <button className="submit-feedback bg-dark">Submit</button>
       </div>
 
       {/* Product Cards */}
@@ -236,12 +228,32 @@ const App = () => {
 
       {/* Reviews Section */}
       <div className="reviews-section">
-        <div className="sidebar-title">Customer Reviews</div>
-        <div className="review-card">"Great product! Highly recommend." - John</div>
-        <div className="review-card">"Amazing quality, will buy again!" - Lisa</div>
-        <div className="review-card">"Fast shipping, great service!" - David</div>
-      </div>
-    </div>
+  <div className="sidebar-title">Customer Reviews</div>
+  
+  <div className="review-card">
+    <img src="https://via.placeholder.com/40" alt="John" className="review-profile-pic" />
+    <div className="review-text">"Great product! Highly recommend." - John</div>
+  </div>
+
+  <div className="review-card">
+    <img src="https://via.placeholder.com/40" alt="Lisa" className="review-profile-pic" />
+    <div className="review-text">"Amazing quality, will buy again!" - Lisa</div>
+  </div>
+
+  <div className="review-card">
+    <img src="https://via.placeholder.com/40" alt="David" className="review-profile-pic" />
+    <div className="review-text">"Fast shipping, great service!" - David</div>
+  </div>
+
+  {/* Feedback Form */}
+  <div className="feedback-section">
+    <h3>Leave a Review</h3>
+    <input type="text" placeholder="Your Name" className="feedback-input" />
+    <textarea placeholder="Write your feedback..." className="feedback-textarea"></textarea>
+    <button className="submit-feedback">Submit</button>
+  </div>
+</div>
+</div>
 
 
 
